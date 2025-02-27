@@ -19,7 +19,7 @@
     --border-radius: 8px;
     --transition: all 0.3s ease;
     --shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    --container-width: 1300px;
+    --container-width: 1400px;
 }
 
 /* Reset & Global Styles */
@@ -141,7 +141,7 @@ img {
 
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2.5rem;
     margin-left: auto;
     flex-wrap: nowrap;
     justify-content: flex-end;
@@ -152,7 +152,7 @@ img {
     color: var(--text);
     position: relative;
     white-space: nowrap;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.75rem;
 }
 
 .nav-links a:hover {
@@ -584,11 +584,11 @@ img {
 /* Responsive Design */
 @media (max-width: 1200px) {
     .container {
-        max-width: 960px;
+        max-width: 1080px;
     }
     
     .nav-links {
-        gap: 1.25rem;
+        gap: 2rem;
     }
     
     .logo {
@@ -598,7 +598,7 @@ img {
 
 @media (max-width: 992px) {
     .container {
-        max-width: 720px;
+        max-width: 840px;
     }
 
     .grid-3, .grid-4 {
@@ -614,16 +614,16 @@ img {
     }
     
     .nav-links {
-        gap: 0.75rem;
+        gap: 1.5rem;
     }
     
     .nav-links a {
-        font-size: 0.9rem;
-        padding: 0.5rem 0.25rem;
+        font-size: 0.95rem;
+        padding: 0.5rem 0.5rem;
     }
     
     .logo {
-        max-width: 240px;
+        max-width: 220px;
     }
     
     .logo-text h1 {
