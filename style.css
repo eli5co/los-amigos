@@ -62,6 +62,7 @@ img {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 1.5rem;
+    width: 100%;
 }
 
 /* Emergency Banner */
@@ -95,22 +96,27 @@ img {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .navbar-container {
     padding: 1rem 0;
+    width: 100%;
 }
 
 .navbar-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-shrink: 0;
+    max-width: 40%;
 }
 
 .logo-icon {
@@ -134,12 +140,18 @@ img {
 .nav-links {
     display: flex;
     gap: 2rem;
+    margin-left: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    min-width: 50%;
 }
 
 .nav-links a {
     font-weight: 500;
     color: var(--text);
     position: relative;
+    white-space: nowrap;
+    padding: 0.5rem 0;
 }
 
 .nav-links a:hover {
@@ -591,6 +603,15 @@ img {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .nav-links {
+        gap: 1rem;
+        min-width: 55%;
+    }
+    
+    .logo {
+        max-width: 35%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -609,6 +630,7 @@ img {
         flex-direction: column;
         text-align: center;
         box-shadow: var(--shadow);
+        z-index: 999;
     }
 
     .nav-links.active {
