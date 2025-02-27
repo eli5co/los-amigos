@@ -19,7 +19,7 @@
     --border-radius: 8px;
     --transition: all 0.3s ease;
     --shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    --container-width: 1200px;
+    --container-width: 1300px;
 }
 
 /* Reset & Global Styles */
@@ -38,6 +38,7 @@ body {
     line-height: 1.6;
     color: var(--text);
     background: var(--white);
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,13 +117,14 @@ img {
     align-items: center;
     gap: 1rem;
     flex-shrink: 0;
-    max-width: 40%;
+    max-width: 320px;
 }
 
 .logo-icon {
     width: 48px;
     height: 48px;
     color: var(--primary);
+    flex-shrink: 0;
 }
 
 .logo-text h1 {
@@ -139,11 +141,10 @@ img {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-left: auto;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    min-width: 50%;
 }
 
 .nav-links a {
@@ -151,7 +152,7 @@ img {
     color: var(--text);
     position: relative;
     white-space: nowrap;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
 }
 
 .nav-links a:hover {
@@ -585,6 +586,14 @@ img {
     .container {
         max-width: 960px;
     }
+    
+    .nav-links {
+        gap: 1.25rem;
+    }
+    
+    .logo {
+        max-width: 280px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -605,12 +614,20 @@ img {
     }
     
     .nav-links {
-        gap: 1rem;
-        min-width: 55%;
+        gap: 0.75rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.25rem;
     }
     
     .logo {
-        max-width: 35%;
+        max-width: 240px;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.3rem;
     }
 }
 
@@ -631,6 +648,11 @@ img {
         text-align: center;
         box-shadow: var(--shadow);
         z-index: 999;
+    }
+    
+    .nav-links a {
+        font-size: 1rem;
+        padding: 0.75rem;
     }
 
     .nav-links.active {
@@ -667,6 +689,10 @@ img {
 
     .testimonials-slider {
         grid-template-columns: 1fr;
+    }
+    
+    .logo {
+        max-width: none;
     }
 }
 
