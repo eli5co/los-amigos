@@ -62,7 +62,7 @@ img {
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
     width: 100%;
 }
 
@@ -118,6 +118,7 @@ img {
     gap: 1rem;
     flex-shrink: 0;
     max-width: 320px;
+    margin-right: 2rem;
 }
 
 .logo-icon {
@@ -141,10 +142,11 @@ img {
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.75rem;
     margin-left: auto;
     flex-wrap: nowrap;
     justify-content: flex-end;
+    padding-right: 1rem;
 }
 
 .nav-links a {
@@ -585,20 +587,24 @@ img {
 @media (max-width: 1200px) {
     .container {
         max-width: 1080px;
+        padding: 0 2rem;
     }
     
     .nav-links {
-        gap: 2rem;
+        gap: 1.5rem;
+        padding-right: 0.75rem;
     }
     
     .logo {
         max-width: 280px;
+        margin-right: 1.5rem;
     }
 }
 
 @media (max-width: 992px) {
     .container {
         max-width: 840px;
+        padding: 0 1.5rem;
     }
 
     .grid-3, .grid-4 {
@@ -614,16 +620,18 @@ img {
     }
     
     .nav-links {
-        gap: 1.5rem;
+        gap: 1.25rem;
+        padding-right: 0.5rem;
     }
     
     .nav-links a {
         font-size: 0.95rem;
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 0.4rem;
     }
     
     .logo {
         max-width: 220px;
+        margin-right: 1rem;
     }
     
     .logo-text h1 {
@@ -699,7 +707,7 @@ img {
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
-        padding: 0 1rem;
+        padding: 0 1.25rem;
     }
 
     .hero-buttons {
