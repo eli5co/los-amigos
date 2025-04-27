@@ -116,6 +116,8 @@ p {
     display: flex;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px;
 }
 
 .estimate-banner .container {
@@ -123,6 +125,8 @@ p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .social-link {
@@ -177,11 +181,14 @@ p {
     box-shadow: var(--shadow);
     height: var(--header-height);
     width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar-container {
     height: 100%;
     width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .navbar-content {
@@ -190,13 +197,16 @@ p {
     align-items: center;
     height: 100%;
     width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
     z-index: 1002;
+    max-width: 70%;
 }
 
 .logo h1 {
@@ -205,11 +215,16 @@ p {
     line-height: 1.2;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .logo a {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
+    max-width: 100%;
 }
 
 .nav-links {
@@ -298,6 +313,9 @@ p {
     cursor: pointer;
     padding: 0;
     z-index: 1002;
+    margin-left: auto;
+    position: relative;
+    right: 0;
 }
 
 .mobile-menu-btn span {
@@ -305,6 +323,7 @@ p {
     height: 3px;
     background-color: var(--primary);
     transition: all 0.3s ease-in-out;
+    display: block;
 }
 
 /* Hero Section */
@@ -1369,6 +1388,27 @@ p {
     
     .mobile-menu-btn {
         display: flex;
+        margin-right: 5px;
+    }
+    
+    .navbar-container {
+        padding: 0 10px;
+    }
+    
+    .navbar-content {
+        padding: 0;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        max-width: 65%;
+    }
+    
+    .logo h1 {
+        font-size: 1.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .nav-links {
@@ -1556,16 +1596,38 @@ p {
         --total-top: 100px;
     }
     
+    .logo {
+        max-width: 60%;
+    }
+    
     .logo h1 {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .navbar-container {
+        padding: 0 8px;
     }
     
     .navbar-content {
         padding: 0;
+        justify-content: space-between;
+    }
+    
+    .mobile-menu-btn {
+        width: 24px;
+        height: 18px;
+        margin-right: 0;
+    }
+    
+    .mobile-menu-btn span {
+        height: 2px;
     }
     
     .container {
-        padding: 0 15px;
+        padding: 0 12px;
     }
     
     .section {
@@ -1613,10 +1675,21 @@ p {
     .call-now-btn {
         padding: 5px 8px;
         font-size: 0.8rem;
+        margin-right: 0;
+    }
+    
+    .call-now-btn svg {
+        width: 14px;
+        height: 14px;
     }
 
     .social-link {
         font-size: 0.7rem;
+    }
+    
+    .social-link svg {
+        width: 16px;
+        height: 16px;
     }
 
     /* Better touch targets for small screens */
@@ -1634,22 +1707,55 @@ p {
 
 /* Extra Small Screen Optimizations */
 @media (max-width: 360px) {
+    .logo {
+        max-width: 55%;
+    }
+    
     .logo h1 {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+    }
+    
+    /* Improved navigation and banner for very small screens */
+    .navbar-container {
+        padding: 0 5px;
+    }
+    
+    .navbar-content {
+        padding: 0;
+    }
+    
+    .mobile-menu-btn {
+        width: 22px;
+        height: 16px;
+        margin-right: 0;
+    }
+    
+    .mobile-menu-btn.active span:first-child {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-menu-btn.active span:last-child {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
     
     .call-now-btn {
-        padding: 5px 8px;
-        font-size: 0.75rem;
+        padding: 4px 6px;
+        font-size: 0.7rem;
     }
     
     .call-now-btn svg {
-        width: 14px;
-        height: 14px;
+        width: 12px;
+        height: 12px;
     }
     
     .estimate-banner .container {
-        padding: 0 8px;
+        padding: 0 5px;
+        justify-content: space-between;
+    }
+    
+    .social-link svg {
+        width: 14px;
+        height: 14px;
     }
     
     .hero h1 {
@@ -1662,7 +1768,7 @@ p {
     
     .btn-primary, 
     .btn-secondary {
-        min-width: 140px;
+        min-width: 130px;
         padding: 0.5rem 0.75rem;
         font-size: 0.9rem;
     }
@@ -1674,5 +1780,52 @@ p {
     .feature-card, 
     .process-card {
         padding: 1.25rem;
+    }
+}
+
+/* Ultra Small Screen Optimizations */
+@media (max-width: 320px) {
+    :root {
+        --header-height: 50px;
+        --banner-height: 35px;
+        --total-top: 85px;
+    }
+
+    .logo {
+        max-width: 50%;
+    }
+    
+    .logo h1 {
+        font-size: 0.8rem;
+    }
+    
+    .navbar-container,
+    .navbar-content {
+        padding: 0 3px;
+    }
+    
+    .mobile-menu-btn {
+        width: 20px;
+        height: 14px;
+    }
+    
+    .call-now-btn {
+        padding: 3px 5px;
+        font-size: 0.65rem;
+        border-radius: 3px;
+    }
+    
+    .call-now-btn svg {
+        width: 11px;
+        height: 11px;
+    }
+    
+    .social-link svg {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .estimate-banner .container {
+        padding: 0 3px;
     }
 }
