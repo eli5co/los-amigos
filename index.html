@@ -3,21 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los Amigos Landscape | Professional Landscaping Services in Leonia, NJ</title>
-    <meta name="description" content="Professional landscaping services in Leonia, NJ. Lawn maintenance, seasonal clean-ups, expert planting, and snow removal services.">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap">
+    <title>Sentra General Construction Services - Professional Construction & Remodeling</title>
+    <meta name="description" content="Sentra General Construction offers professional remodeling and construction services including kitchen and bathroom renovations, roofing, concrete work, exterior remodeling, and more.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
+    <!-- Structured data for local business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Sentra General Construction Services",
+      "image": "/logo.svg",
+      "url": "https://sentraconstruction.com",
+      "telephone": "+18001234567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Englewood",
+        "addressRegion": "NJ",
+        "postalCode": "07631",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.8928,
+        "longitude": -73.9754
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sentraconstruction",
+        "https://www.facebook.com/sentraconstruction"
+      ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Emergency Banner -->
-    <div class="emergency-banner">
+    <!-- Estimate Banner -->
+    <div class="estimate-banner">
         <div class="container">
-            <span>Professional Landscaping Services in Bergen County</span>
-            <a href="tel:+12015555555" class="emergency-phone">
+            <a href="https://www.instagram.com/sentraconstruction" class="social-link" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>@sentraconstruction</span>
+            </a>
+            <a href="tel:+18001234567" class="call-now-btn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
-                (201) 555-5555
+                Call Now
             </a>
         </div>
     </div>
@@ -27,20 +75,25 @@
         <div class="navbar-container">
             <div class="navbar-content">
                 <div class="logo">
-                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17.013l4.413-15.168c.386-1.332 2.787-1.332 3.173 0L19 17.013M7 17.013h12M7 17.013c-1.333.386-2.333.386-3 0M19 17.013c1.333.386 2.333.386 3 0M2 17.013h20M12 6.013v8"></path>
-                    </svg>
-                    <div class="logo-text">
-                        <h1>Los Amigos<br>Landscape</h1>
-                        <span class="license">Serving Bergen County</span>
-                    </div>
+                    <h1>Sentra General Construction</h1>
                 </div>
-                
                 <div class="nav-links" id="navLinks">
-                    <a href="#services">Services</a>
-                    <a href="#process">Our Process</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#testimonials">Reviews</a>
+                    <div class="dropdown">
+                        <a href="#services" class="dropdown-toggle">Services 
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="remodeling.html">Remodeling</a>
+                            <a href="roof.html">Roof</a>
+                            <a href="concrete.html">Concrete</a>
+                            <a href="exterior-remodeling.html">Exterior Remodeling</a>
+                            <a href="general-construction.html">General Construction</a>
+                        </div>
+                    </div>
+                    <a href="#photo-gallery">Gallery</a>
+                    <a href="#testimonials">Testimonials</a>
                     <a href="#contact">Contact</a>
                 </div>
 
@@ -53,14 +106,11 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="menu-overlay" id="menuOverlay"></div>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Professional Landscaping Services in Leonia, NJ</h1>
-            <p>Your outdoor space tells a story—let Los Amigos Landscape craft a narrative worth sharing</p>
+            <h1>Quality Construction & Remodeling</h1>
+            <p>Professional construction and remodeling services for residential and commercial properties. From kitchen and bathroom renovations to concrete work and roofing, we bring your vision to life.</p>
             <div class="hero-buttons">
                 <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
                     Free Estimate
@@ -68,89 +118,259 @@
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
                 </button>
-                <a href="tel:+12015555555" class="btn-secondary">
+                <a href="tel:+18001234567" class="btn-secondary">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
-                    Contact Us
+                    Call Now
                 </a>
             </div>
-            <div class="hero-badges">
-                <div class="badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span>Licensed & Insured</span>
-                </div>
-                <div class="badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
-                    <span>5-Star Rated</span>
-                </div>
-                <div class="badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                    <span>Family Owned</span>
-                </div>
-            </div>
         </div>
+        <div class="hero-overlay"></div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="section fade-in-section">
         <div class="container">
             <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive landscaping solutions for every season</p>
+                <h2>Professional Construction & Remodeling Services</h2>
+                <p>Transform your property with our expert renovation and construction solutions</p>
             </div>
             <div class="grid-3">
-                <div class="service-card" data-seasonal="3,4,5,6,7,8,9">
-                    <div class="service-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-26%20at%205.50.04%20PM-AfnjtHaZ5BmuAVvCMiQgvjUZiHdbch.png" alt="Lawn Maintenance Service">
-                    </div>
+                <div class="service-card">
+                    <img src="remodeling.jpg" alt="Remodeling Services" loading="lazy">
                     <div class="service-content">
-                        <h3>Lawn Maintenance</h3>
-                        <p>Professional lawn care services</p>
-                        <ul class="service-features">
-                            <li>Weekly mowing</li>
-                            <li>Edge trimming</li>
-                            <li>Debris removal</li>
-                            <li>Lawn treatments</li>
+                        <h3>Remodeling</h3>
+                        <p>Transform your home with our custom remodeling services.</p>
+                        <ul class="service-list">
+                            <li>Kitchen Remodeling</li>
+                            <li>Bathroom Remodeling</li>
+                            <li>Basement Remodeling</li>
+                            <li>Laundry Room Renovation</li>
+                            <li>Deck Construction</li>
+                            <li>Custom Shower Door Installation</li>
                         </ul>
+                        <a href="remodeling.html" class="service-link">Learn More</a>
                     </div>
                 </div>
-                <div class="service-card" data-seasonal="3,4,5,8,9">
-                    <div class="service-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-26%20at%205.49.42%20PM-Gv8Tc5pGslecWiNVSj8Yb0Of3yPI1I.png" alt="Expert Planting">
-                    </div>
+                <div class="service-card">
+                    <img src="roofing.jpg" alt="Roofing Services" loading="lazy">
                     <div class="service-content">
-                        <h3>Expert Planting</h3>
-                        <p>Beautiful landscape design and installation</p>
-                        <ul class="service-features">
-                            <li>Garden design</li>
-                            <li>Plant selection</li>
-                            <li>Soil preparation</li>
-                            <li>Ongoing care</li>
+                        <h3>Roof</h3>
+                        <p>Professional roofing services to protect your home.</p>
+                        <ul class="service-list">
+                            <li>Roof Repair</li>
+                            <li>Emergency Roof Service 24/7</li>
+                            <li>Roof Inspections</li>
+                            <li>Roof Replacement</li>
+                            <li>Leak Detection & Repair</li>
                         </ul>
+                        <a href="roof.html" class="service-link">Learn More</a>
                     </div>
                 </div>
-                <div class="service-card" data-seasonal="8,9,10">
-                    <div class="service-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-26%20at%205.49.27%20PM-j8rxH8ZMTxCzVSRearEloB5FOlQA8j.png" alt="Seasonal Clean-ups">
-                    </div>
+                <div class="service-card">
+                    <img src="concrete.jpg" alt="Concrete Services" loading="lazy">
                     <div class="service-content">
-                        <h3>Seasonal Clean-ups</h3>
-                        <p>Spring and fall property preparation</p>
-                        <ul class="service-features">
-                            <li>Leaf removal</li>
-                            <li>Bed maintenance</li>
-                            <li>Plant trimming</li>
-                            <li>Property clearing</li>
+                        <h3>Concrete</h3>
+                        <p>Expert concrete solutions for all your needs.</p>
+                        <ul class="service-list">
+                            <li>Sidewalks Installation & Repair</li>
+                            <li>Pavers Installation</li>
+                            <li>Retaining Walls</li>
+                            <li>Waterproofing</li>
+                            <li>Drain Pipe Services</li>
+                            <li>Epoxy Flooring</li>
                         </ul>
+                        <a href="concrete.html" class="service-link">Learn More</a>
                     </div>
+                </div>
+                <div class="service-card">
+                    <img src="exterior-remodeling.jpg" alt="Exterior Remodeling" loading="lazy">
+                    <div class="service-content">
+                        <h3>Exterior Remodeling</h3>
+                        <p>Enhance your home's curb appeal and protect your investment.</p>
+                        <ul class="service-list">
+                            <li>Painting & Wallpaper Service</li>
+                            <li>Home Extensions</li>
+                            <li>Siding Installation & Repair</li>
+                            <li>Gutter Repair & Replacement</li>
+                            <li>Gutter Guards Installation</li>
+                        </ul>
+                        <a href="exterior-remodeling.html" class="service-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="general-construction.jpg" alt="General Construction" loading="lazy">
+                    <div class="service-content">
+                        <h3>General Construction</h3>
+                        <p>Comprehensive construction services for your property.</p>
+                        <ul class="service-list">
+                            <li>Chimney Repair & Installation</li>
+                            <li>Chimney Repointing</li>
+                            <li>Flooring Installation</li>
+                            <li>Framing</li>
+                            <li>Driveway Sealer Application</li>
+                        </ul>
+                        <a href="general-construction.html" class="service-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card emergency-service">
+                    <div class="service-content emergency-content">
+                        <div class="emergency-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                        </div>
+                        <h3>24/7 Emergency Services</h3>
+                        <p>We offer emergency roof repair and other urgent construction services. Call us anytime, day or night.</p>
+                        <a href="tel:+18001234567" class="emergency-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Call Emergency Line
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Slider Section -->
+    <section id="photo-gallery" class="section bg-light fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Work</h2>
+                <p>Browse through our recent projects and transformations</p>
+            </div>
+            <div class="gallery-slider" id="gallerySlider">
+                <div class="gallery-slide">
+                    <img src="gallery-1.jpg" alt="Kitchen Remodeling Project" class="gallery-slide-image">
+                </div>
+                <div class="gallery-slide">
+                    <img src="gallery-2.jpg" alt="Bathroom Renovation Project" class="gallery-slide-image">
+                </div>
+                <div class="gallery-slide">
+                    <img src="gallery-3.jpg" alt="Roofing Project" class="gallery-slide-image">
+                </div>
+                <div class="gallery-slide">
+                    <img src="gallery-4.jpg" alt="Concrete Work" class="gallery-slide-image">
+                </div>
+                <div class="gallery-slide">
+                    <img src="gallery-5.jpg" alt="Exterior Remodeling" class="gallery-slide-image">
+                </div>
+                <div class="gallery-slide">
+                    <img src="gallery-6.jpg" alt="Chimney Repair" class="gallery-slide-image">
+                </div>
+            </div>
+            <div class="gallery-nav">
+                <button class="gallery-prev" aria-label="Previous slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <div class="gallery-dots"></div>
+                <button class="gallery-next" aria-label="Next slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="section fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Sentra General Construction</h2>
+                <p>Experience the difference with our professional approach to construction and remodeling</p>
+            </div>
+            <div class="grid-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5l6.74-6.76z"></path>
+                            <line x1="16" y1="8" x2="2" y2="22"></line>
+                            <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Experience</h3>
+                    <p>Years of successful projects in residential and commercial construction</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Expertise</h3>
+                    <p>Skilled craftsmen and construction professionals</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Communication</h3>
+                    <p>Clear updates throughout your project</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3>Protection</h3>
+                    <p>Licensed, bonded, and insured for your peace of mind</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Quality</h3>
+                    <p>Premium materials and exceptional workmanship</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Reliability</h3>
+                    <p>On-time and on-budget completion</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3>Service</h3>
+                    <p>Exceptional customer care from start to finish</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Value</h3>
+                    <p>Competitive pricing for high-quality work</p>
                 </div>
             </div>
         </div>
@@ -160,111 +380,66 @@
     <section id="process" class="section bg-light fade-in-section">
         <div class="container">
             <div class="section-header">
-                <h2>Our Process</h2>
-                <p>Experience our professional approach to landscape management</p>
+                <h2>The Sentra Construction Difference</h2>
+                <p>Our simple four-step process ensures your project runs smoothly from start to finish</p>
             </div>
             <div class="grid-4">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                        </svg>
-                    </div>
-                    <h3>1. Consultation</h3>
-                    <p>We start with understanding your vision and property needs</p>
+                <div class="process-card">
+                    <div class="step-number">1</div>
+                    <h3>Initial Consultation</h3>
+                    <p>We discuss your goals, evaluate your space, and explore design possibilities</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
-                    </div>
-                    <h3>2. Planning</h3>
-                    <p>Developing a customized plan for your landscape</p>
+                <div class="process-card">
+                    <div class="step-number">2</div>
+                    <h3>Design & Planning</h3>
+                    <p>We create a detailed plan including project scope, materials, timeline, and transparent pricing</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h3>3. Execution</h3>
-                    <p>Professional implementation with attention to detail</p>
+                <div class="process-card">
+                    <div class="step-number">3</div>
+                    <h3>Construction</h3>
+                    <p>Our experienced team completes your project with quality craftsmanship and attention to detail</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                    </div>
-                    <h3>4. Maintenance</h3>
-                    <p>Ongoing care to keep your property beautiful</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section fade-in-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Recent Projects</h2>
-                <p>See our quality workmanship in action</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="before-after" data-transformation="Landscape Renovation">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-26%20at%205.50.04%20PM-AfnjtHaZ5BmuAVvCMiQgvjUZiHdbch.png" alt="After Landscape Renovation" class="after">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-26%20at%205.49.42%20PM-Gv8Tc5pGslecWiNVSj8Yb0Of3yPI1I.png" alt="Before Landscape Renovation" class="before">
-                        <div class="slider" role="slider" tabindex="0" aria-label="Before and after image comparison slider"></div>
-                    </div>
-                    <p class="gallery-caption">Complete Yard Transformation - Leonia, NJ</p>
-                </div>
-                <div class="gallery-item">
-                    <div class="before-after" data-transformation="Garden Installation">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-26%20at%205.49.27%20PM-j8rxH8ZMTxCzVSRearEloB5FOlQA8j.png" alt="After Garden Installation" class="after">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-26%20at%205.49.20%20PM-TvMaz78mbtpLtdRTASSGphtF9W7dSQ.png" alt="Before Garden Installation" class="before">
-                        <div class="slider" role="slider" tabindex="0" aria-label="Before and after image comparison slider"></div>
-                    </div>
-                    <p class="gallery-caption">Garden Design & Installation - Fort Lee, NJ</p>
+                <div class="process-card">
+                    <div class="step-number">4</div>
+                    <h3>Final Walkthrough</h3>
+                    <p>We conduct a detailed inspection with you to ensure everything meets our high standards</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="section bg-light fade-in-section">
+    <section id="testimonials" class="section fade-in-section">
         <div class="container">
             <div class="section-header">
-                <h2>Customer Reviews</h2>
-                <p>What our clients say about our work</p>
+                <h2>What Our Customers Say</h2>
+                <p>Hear from our satisfied clients about their experience with Sentra General Construction</p>
             </div>
             <div class="testimonials-slider" id="testimonialSlider">
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        <p>"Los Amigos Landscape has been maintaining our property for over 2 years. Their attention to detail and reliability is outstanding!"</p>
+                        <p>"Sentra General Construction just finished our kitchen renovation, and we couldn't be happier with the results. The crew was professional, on-time, and their attention to detail was impressive. The finished product exceeded our expectations and has transformed our home completely. Highly recommend!"</p>
                         <div class="testimonial-author">
                             <strong>Michael R.</strong>
-                            <span>Leonia, NJ</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"They transformed our backyard into a beautiful space. The team is professional, punctual, and thorough."</p>
-                        <div class="testimonial-author">
-                            <strong>Sarah K.</strong>
-                            <span>Fort Lee, NJ</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Excellent spring clean-up service. They went above and beyond our expectations. Highly recommend!"</p>
-                        <div class="testimonial-author">
-                            <strong>David M.</strong>
                             <span>Englewood, NJ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"We hired Sentra General Construction to remodel our master bathroom and were amazed by the results. From the initial design consultation to the final walkthrough, every step was handled professionally. They completed the project on time and within our budget. The new bathroom is absolutely stunning and functions beautifully."</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah T.</strong>
+                            <span>Tenafly, NJ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Sentra General Construction repaired our roof after a storm and did a fantastic job. Their emergency response was quick, and they were able to prevent further damage to our home. The team was knowledgeable, respectful of our property, and completed the work with high-quality materials. We're now enjoying a leak-free home thanks to their expertise!"</p>
+                        <div class="testimonial-author">
+                            <strong>David & Lisa K.</strong>
+                            <span>Fort Lee, NJ</span>
                         </div>
                     </div>
                 </div>
@@ -272,46 +447,124 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section fade-in-section">
+    <!-- Service Areas Section -->
+    <section id="service-areas" class="section bg-light fade-in-section">
         <div class="container">
             <div class="section-header">
-                <h2>Get a Free Estimate</h2>
-                <p>Contact us for a consultation and quote</p>
+                <h2>Service Area</h2>
+                <p>Proudly serving Bergen County and surrounding areas from our Englewood location</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Needed</label>
-                            <select id="service" name="service" required>
-                                <option value="">Select a service</option>
-                                <option value="lawn-maintenance">Lawn Maintenance</option>
-                                <option value="spring-cleanup">Spring Clean-up</option>
-                                <option value="fall-cleanup">Fall Clean-up</option>
-                                <option value="planting">Expert Planting</option>
-                                <option value="snow-removal">Snow Removal</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Get Estimate</button>
-                    </form>
+            <div class="service-areas-container">
+                <img src="bergen-county-map.jpg" alt="Bergen County Service Area" class="service-area-map" loading="lazy">
+                <div class="service-towns-container">
+                    <div class="service-towns">
+                        <span>Englewood</span>
+                        <span>Fort Lee</span>
+                        <span>Tenafly</span>
+                        <span>Closter</span>
+                        <span>Cresskill</span>
+                        <span>Bergenfield</span>
+                        <span>Teaneck</span>
+                        <span>And Surrounding Communities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our services</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does a typical kitchen or bathroom remodel take?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A typical kitchen remodel takes 3-6 weeks, while a bathroom remodel usually takes 2-4 weeks, depending on the size and complexity of the project. Factors that affect timeline include necessary demolition, structural changes, custom elements, and material availability. During your initial consultation, we'll provide a detailed timeline specific to your project.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide free estimates?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We provide free, no-obligation estimates for all of our services. We'll visit your property, discuss your needs and vision, and provide a detailed estimate outlining all costs involved in your project.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are you licensed and insured?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Sentra General Construction is fully licensed, bonded, and insured in the state of New Jersey. We carry comprehensive general liability insurance and workers' compensation coverage to protect you and your property throughout the project. Our license and insurance information is available upon request.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you handle permits for construction projects?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we handle all necessary permits for your project. Our team is familiar with local building codes and permit requirements throughout Bergen County and surrounding areas. We'll manage the entire permitting process, ensuring all work is compliant with local regulations and properly inspected.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How quickly can you respond to emergency roof issues?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer 24/7 emergency roof repair services and typically respond within 1-2 hours of your call. Our emergency team is equipped to handle immediate issues like leaks, storm damage, and other urgent situations to prevent further damage to your home. For non-emergency issues, we can usually schedule an inspection within 24-48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer any warranties on your work?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we stand behind our craftsmanship. Sentra General Construction provides a 2-year warranty on labor for all our remodeling and construction work. Additionally, most materials and products we install come with manufacturer warranties, which we'll provide to you upon project completion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Google Map instead of a form -->
+    <section id="contact" class="section bg-light fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Reach out to discuss your project or schedule a free consultation</p>
+            </div>
+            <div class="contact-grid map-contact">
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24188.82186400779!2d-73.99754036376952!3d40.89280495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f15ee509d499%3A0x5950b139898bd187!2sEnglewood%2C%20NJ%2007631!5e0!3m2!1sen!2sus!4v1682777008145!5m2!1sen!2sus" width="100%" height="450" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="contact-info">
                     <div class="contact-details">
@@ -321,32 +574,72 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            <span>485 Broad Ave<br>Leonia, NJ 07605</span>
+                            <span>Englewood, NJ 07631</span>
                         </div>
                         <div class="contact-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                             </svg>
-                            <span>(201) 555-5555</span>
+                            <span>(800) 123-4567</span>
                         </div>
                         <div class="contact-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
-                            <span>info@losamigoslandscape.com</span>
+                            <span>info@sentraconstruction.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Business Hours:<br>Mon-Sat / 7am – 7pm<br>24/7 Emergency Service</span>
                         </div>
                     </div>
-                    <div class="service-area">
-                        <h3>Service Area</h3>
-                        <p>Proudly serving Bergen County, including:</p>
-                        <div class="service-towns">
-                            <span>Leonia</span>
-                            <span>Fort Lee</span>
-                            <span>Englewood</span>
-                            <span>Teaneck</span>
-                            <span>Palisades Park</span>
-                            <span>Ridgefield</span>
+                    <div class="social-links-container">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/sentraconstruction" target="_blank" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/sentraconstruction" target="_blank" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="certification-badges">
+                        <div class="badge">
+                            <div class="badge-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <span>Licensed</span>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                            </div>
+                            <span>Bonded</span>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9 12l2 2 4-4"></path>
+                                </svg>
+                            </div>
+                            <span>Insured</span>
                         </div>
                     </div>
                 </div>
@@ -359,55 +652,54 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-section">
-                    <h3>Los Amigos Landscape</h3>
-                    <p>Professional landscaping services since 2010</p>
-                    <div class="certifications">
-                        <img src="/licensed-landscaper.png" alt="Licensed Landscaper" loading="lazy">
-                        <img src="/fully-insured.png" alt="Fully Insured" loading="lazy">
-                    </div>
+                    <h3>Sentra General Construction</h3>
+                    <p>Professional construction and remodeling services for residential and commercial properties since 2010</p>
+                    <p class="license">NJ License # 13VH11571800</p>
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li>Lawn Maintenance</li>
-                        <li>Seasonal Clean-ups</li>
-                        <li>Expert Planting</li>
-                        <li>Snow Removal</li>
+                        <li><a href="remodeling.html">Remodeling</a></li>
+                        <li><a href="roof.html">Roof</a></li>
+                        <li><a href="concrete.html">Concrete</a></li>
+                        <li><a href="exterior-remodeling.html">Exterior Remodeling</a></li>
+                        <li><a href="general-construction.html">General Construction</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
+                    <h4>Areas Served</h4>
                     <ul>
-                        <li>485 Broad Ave</li>
-                        <li>Leonia, NJ 07605</li>
-                        <li>(201) 555-5555</li>
-                        <li>info@losamigoslandscape.com</li>
+                        <li><a href="#service-areas">Englewood</a></li>
+                        <li><a href="#service-areas">Fort Lee</a></li>
+                        <li><a href="#service-areas">Tenafly</a></li>
+                        <li><a href="#service-areas">Bergen County</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Connect</h4>
+                    <h4>Connect With Us</h4>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Instagram">
+                        <a href="https://www.instagram.com/sentraconstruction" target="_blank" aria-label="Instagram">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
                         </a>
+                        <a href="https://www.facebook.com/sentraconstruction" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Los Amigos Landscape. All rights reserved.</p>
+                <p>&copy; <span id="currentYear"></span> Sentra General Construction. All rights reserved.</p>
+                <p>Englewood, NJ 07631 | (800) 123-4567 | LIC# 13VH11571800</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
